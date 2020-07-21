@@ -1,0 +1,236 @@
+/* 
+GERAL
+ */
+
+body{
+    font-family: "Red Rose", Helvetica, Arial, sans-serif;
+    color: #ff9867;
+
+
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.botão {
+    color: floralwhite;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #ff4545;
+    font-size: 0.9em;
+    border-radius: 6px;
+}
+
+/* 
+NAVEGAÇÃO 
+*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff4545;
+    padding-left: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #ffedb2;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Lobster", Arial, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    text-decoration: none;
+    color: #ffbf87;
+   
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-image: url('https://image.freepik.com/free-photo/slate-texture-background_24972-292.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffedb2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/*
+SOBRE
+*/
+
+#Sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #ffedb2;
+    color: #ff4545;
+}
+
+#Sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+/*
+SERVIÇOS
+*/
+
+#Serviços {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+PORTIFOLIO
+*/
+
+#Portifólio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #ffedb2;
+}
+
+#Portifólio h2 {
+    margin-bottom: 20px;
+}
+
+#Portifólio img {
+    width: 100%;
+}
+
+/*
+CONTATO
+*/
+
+#Contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ff4545;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/*
+Media Queries
+*/
+
+@media screen and (min-width:768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 40%;
+    }
+
+    header {
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #Sobre {
+        height: 500px;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    #Serviços {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #Serviços h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #Serviços div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #Portifólio {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    #Portifólio h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #Contatos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #Contatos a {
+        text-decoration: none;
+        color: #ff9867
+    }
+
+}
+
